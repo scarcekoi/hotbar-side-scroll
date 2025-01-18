@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "hotbarsidescroll",
+	"version": "${version}",
+	"name": "Hotbar Side Scroll",
+	"description": "Adds keybind configuration for scrolling through the hotbar.",
+	"authors": [
+		"Scarce Koi"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/hotbar-side-scroll",
+		"sources": "https://github.com/scarcekoi/Hotbar-Side-Scroll",
+		"issues": "https://github.com/scarcekoi/Hotbar-Side-Scroll/issues"
+	},
+	"license": "MIT License",
+	"icon": "assets/hotbarsidescroll/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.scarcekoi.hotbarsidescroll.HotbarSideScroll"
+		],
+		"client": [
+			"dev.scarcekoi.hotbarsidescroll.HotbarSideScrollClient"
+		],
+		"fabric-datagen": [
+			"dev.scarcekoi.hotbarsidescroll.HotbarSideScrollDataGenerator"
+		]
+	},
+	"mixins": [
+		"hotbarsidescroll.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-key-binding-api-v1": "*"
+	},
+	"suggests": {
+		"another-mod": "mod-menu"
+	}
+}
